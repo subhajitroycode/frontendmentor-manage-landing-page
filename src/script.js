@@ -3,7 +3,12 @@ const menu = document.getElementById("menu");
 const image = document.getElementById("menu-icon");
 const emailInput = document.getElementById("email");
 const submitButton = document.getElementById("submit-button");
+const rights = document.getElementById("rights");
 let expanded = false;
+
+const date = new Date();
+const year = date.getFullYear();
+rights.innerText = `Copyright ${year}. All Rights Reserved`;
 
 btn.addEventListener("click", () => {
   if (!expanded) {
